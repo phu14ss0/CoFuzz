@@ -4,6 +4,7 @@
 [submodule "third_party/concolic"]
 	path = third_party/concolic
 	url = https://github.com/Tricker-z/symcc.git
+	branch = 37ae14d
 [submodule "fuzzer"]
 	path = fuzzer
 	url = https://github.com/Tricker-z/AFL.git
