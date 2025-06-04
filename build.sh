@@ -14,12 +14,12 @@ pushd $base_path
 LLVM_CONFIG=llvm-config-10 CC=clang-10 CXX=clang++-10 make -j$(nproc) -C trace
 
 # Build SMT-solver z3
-pushd $base_path/third_party/z3
-git checkout z3-4.8.12
-python3 scripts/mk_make.py
-pushd build
-make -j$(nproc)
-make install
+# pushd $base_path/third_party/z3
+# git checkout z3-4.8.12
+# python3 scripts/mk_make.py
+# pushd build
+# make -j$(nproc)
+# make install
 
 # Build concolic executor with QSYM backend
 pushd $base_path/third_party/concolic
